@@ -10,7 +10,7 @@ jobs:
         with:
           node-version: '12'
       - run: npm i jest
-      - run: jest
+      - run: npm test
       - name: Tests ✅
         if: ${{ success() }}
         run: |
